@@ -60,6 +60,7 @@ module.exports = (env = {}) => {
           test: /\.s[ca]ss/,
           use: [...getStyleLoaders(), 'sass-loader']
         }
+
       ]
     },
     plugins: getPlugins(),

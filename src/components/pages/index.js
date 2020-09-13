@@ -1,11 +1,7 @@
-import {
-   CalculationPage,
-   RecomendationPage,
-   Error404Page
-} from './pages'
+import СheckoutPage from './checkout-page'
+import Error404Page from './error-404-page'
 
 export {
-   CalculationPage,
-   RecomendationPage,
+   СheckoutPage,
    Error404Page
 }

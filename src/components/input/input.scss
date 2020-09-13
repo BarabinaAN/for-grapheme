@@ -1,0 +1,29 @@
+label {
+   display: block;
+   margin-bottom: 0.375em;
+   color: #101d94;
+}
+
+input,
+select {
+   display: block;
+   width: 100%;
+   height: calc(1.5em + 0.9rem + 2px);
+   padding: 0.45rem 0.95rem;
+   font-size: 1rem;
+   line-height: 1.5;
+   color: #6b6b6b;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #dedcdc;
+   border-radius: 5px;
+   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+   box-sizing: border-box;
+   &.is--invalid {
+      border-color: #ffadad;
+   }
+}
+.error-message {
+   font-size: 12px;
+   color: #ffadad;
+}

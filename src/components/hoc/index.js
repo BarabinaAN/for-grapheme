@@ -1,7 +1,5 @@
-import withServiceConsumer from './with-service-consumer'
-import withData from './with-data'
+import withValidateForm from './with-validate-form'
 
 export {
-  withServiceConsumer,
-  withData
+  withValidateForm
 }
