@@ -17,7 +17,7 @@ const СheckoutPage = (props) => {
    const content = isValidate ? renderCheckoutValidate() : <СheckoutForm {...props}/>
 
    return (
-      <div className='page-content'>
+      <div className='page-content container'>
          {content}
       </div>
    )

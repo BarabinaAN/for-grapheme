@@ -1,4 +1,4 @@
-@import '../../assets/variable.scss';
+@import "../../assets/variable.scss";
 
 .checkout {
    background-color: $bgColorWhite;
@@ -15,6 +15,9 @@
       justify-content: center;
       flex-direction: column;
    }
+   @include media-to(768px) {
+      padding: 20px;
+   }
 }
 
 legend {
@@ -22,6 +25,9 @@ legend {
    line-height: 31px;
    color: $colorActive;
    margin-bottom: 1.25rem;
+   @include media-to(768px) {
+      font-size: 20px;
+   }
 }
 
 .btn {
@@ -45,7 +51,7 @@ legend {
    &.btn-primary {
       color: $colorWhite;
       background-color: $colorBtnPrimary;
-      border-color:  $colorBtnPrimary;
+      border-color: $colorBtnPrimary;
    }
    &:hover {
       @include media-from(768px) {
