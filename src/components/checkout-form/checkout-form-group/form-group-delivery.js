@@ -14,6 +14,7 @@ export const FormGroupDelivery = (props) => {
          <Input
             className='mb-2'
             label="Получатель"
+            id='userName1'
             name="userName"
             placeholder='ФИО'
             value={data.userName}
@@ -23,7 +24,7 @@ export const FormGroupDelivery = (props) => {
             required
          />
          <div className='mb-2'>
-            <label> Адрес </label>
+            <label htmlFor='adrhtmlForess1'> Адрес </label>
             <Input
                name="town"
                placeholder='Город'
@@ -34,6 +35,7 @@ export const FormGroupDelivery = (props) => {
                required
             />
             <Input
+               id='adress1'
                name="adress"
                placeholder='Адрес'
                value={data.adress}

@@ -41,9 +41,16 @@ legend {
       box-shadow 0.15s ease-in-out;
    text-decoration: none;
    box-sizing: border-box;
+   cursor: pointer;
    &.btn-primary {
       color: $colorWhite;
       background-color: $colorBtnPrimary;
       border-color:  $colorBtnPrimary;
+   }
+   &:hover {
+      @include media-from(768px) {
+         background-color: rgba($colorBtnPrimary, 0.75);
+         border-color: rgba($colorBtnPrimary, 0.75);
+      }
    }
 }

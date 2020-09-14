@@ -14,8 +14,8 @@ select {
    padding: 0.45rem 0.95rem;
    font-size: 1rem;
    line-height: 1.5;
-   color: lighten($colorDisable, 27.5%);
-   background-color: #fff;
+   color: darken($colorDisable, 17.25%);
+   background-color: $bgColorWhite;
    background-clip: padding-box;
    border: 1px solid lighten($colorDisable, 27.5%);
    border-radius: 5px;

@@ -2,6 +2,7 @@ import React from "react";
 import "./input.scss";
 
 const Input = ({
+  id = '#',
   className = 'mb-1',
   type = 'text',
   autoFocus = false,
@@ -12,7 +13,7 @@ const Input = ({
   ...props
 }) => {
 
-  const labelField = label ? <label>{label}</label> : null
+  const labelField = label ? <label htmlFor={id}>{label}</label> : null
   const inputClass = !!error ? `is--invalid` : className
   const errorMessage = !!error && <span className='error-message'>{error}</span>
 
@@ -20,6 +21,7 @@ const Input = ({
     <div className={className}>
       {labelField}
       <input
+        id={id}
         className={inputClass}
         type={type}
         autoFocus={autoFocus}

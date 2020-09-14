@@ -9,6 +9,7 @@ export const FormGroupPay = (props) => {
          <Input
             className='mb-2'
             label="Имя на карте"
+            id='nameOnCard1'
             name="nameOnCard"
             placeholder='Konstantin Ivanov'
             value={data.nameOnCard}
@@ -21,6 +22,7 @@ export const FormGroupPay = (props) => {
          <Input
             className='mb-2'
             label="Номер карты"
+            id='сardNumber1'
             name="сardNumber"
             placeholder='XXXX XXXX XXXX XXXX XXXX'
             value={data.сardNumber}
@@ -33,6 +35,7 @@ export const FormGroupPay = (props) => {
             <div className='col-4'>
                <Input
                   label="Срок"
+                  id='cardPeriod1'
                   name="cardPeriod"
                   placeholder='MM / YY'
                   value={data.cardPeriod}
@@ -45,6 +48,7 @@ export const FormGroupPay = (props) => {
             <div className='col-4'>
                <Input
                   label="CVV"
+                  id='cardCVV1'
                   name="cardCVV"
                   value={data.cardCVV}
                   onChange={handleInput}
