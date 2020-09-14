@@ -10,7 +10,6 @@ body {
   line-height: 18px;
 }
 h1 {
-  font-style: normal;
   font-weight: normal;
   font-size: 34px;
   line-height: 41px;
@@ -24,11 +23,21 @@ h1 {
 .container {
   padding: 0 1.5rem;
 }
-
-legend {
-  font-weight: 300;
-  font-size: 26px;
-  line-height: 31px;
-  color: #101d94;
+.row {
+  display: flex;
+  margin: 0 -10px;
+}
+.col-6 {
+  width: calc(100% / 10 * 6);
+  padding: 0 10px;
+}
+.col-4 {
+  width: calc(100% / 10 * 4);
+  padding: 0 10px;
+}
+.mb-1 {
+  margin-bottom: 0.625rem;
+}
+.mb-2 {
   margin-bottom: 1.25rem;
 }

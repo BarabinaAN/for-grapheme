@@ -1,4 +1,4 @@
-.checkout-form {
+.checkout {
    background-color: #fff;
    padding: 20px 40px;
    box-sizing: border-box;
@@ -13,6 +13,14 @@
       justify-content: center;
       flex-direction: column;
    }
+}
+
+legend {
+   font-weight: 300;
+   font-size: 26px;
+   line-height: 31px;
+   color: #101d94;
+   margin-bottom: 1.25rem;
 }
 
 .btn {
@@ -32,61 +40,9 @@
       box-shadow 0.15s ease-in-out;
    text-decoration: none;
    box-sizing: border-box;
-}
-.btn-primary {
-   color: #fff;
-   background-color: rgba(25, 165, 39, 0.8);
-   border-color: rgba(25, 165, 39, 0.8);
-}
-
-.row {
-   display: flex;
-   margin: 0 -10px;
-}
-.col-6 {
-   width: calc(100% / 10 * 6);
-   padding: 0 10px;
-}
-.col-4 {
-   width: calc(100% / 10 * 4);
-   padding: 0 10px;
-}
-.mb-1 {
-   margin-bottom: 0.625rem;
-}
-.field-group,
-.mb-2 {
-   margin-bottom: 1.25rem;
-}
-
-.steps {
-   display: flex;
-   flex-wrap: wrap;
-   margin-bottom: 1rem;
-   list-style: none;
-   border-radius: 0.25rem;
-}
-.steps-item {
-   display: flex;
-   font-weight: normal;
-   font-size: 12px;
-   line-height: 14px;
-   color: #979797;
-   &.is-active {
-      color: #101d94;
-   }
-   & + .steps-item {
-      padding-left: 0.5rem;
-      &:before {
-         display: inline-block;
-         margin: 0 0.5rem;
-         content: "";
-         width: 11px;
-         height: 11px;
-         border: 1px solid;
-         transform: rotate(45deg) translate(-50%, 50%);
-         border-color: #979797 #979797 transparent transparent;
-         box-sizing: border-box;
-      }
+   &.btn-primary {
+      color: #fff;
+      background-color: rgba(25, 165, 39, 0.8);
+      border-color: rgba(25, 165, 39, 0.8);
    }
 }

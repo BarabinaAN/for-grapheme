@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {
-  validateEmail,
   validateIndex,
   validateUserName,
   validateTown,
@@ -16,7 +15,7 @@ const initValues = {
   town: '',
   adress: '',
   index: '',
-  // options: [],
+  country: '',
   nameOnCard: '',
   сardNumber: '',
   cardPeriod: '',
@@ -28,7 +27,7 @@ const validateFields = {
   town: '',
   adress: '',
   index: '',
-  // options: [],
+  country: '',
   nameOnCard: '',
   сardNumber: '',
   cardPeriod: '',
@@ -59,6 +58,21 @@ const withValidateForm = (View) => {
         }
       }));
     };
+    
+    handleSelect = (event) => {
+      const { name, value } = event.target;
+      this.setState(({ data, errors }) => ({
+        data: {
+          ...data,
+          [name]: value
+        },
+        errors: {
+          ...errors,
+          [name]: false
+        }
+      }));
+      this.validateForm(name, value);
+    }
 
 
     handleNextStep = () => {
@@ -95,10 +109,6 @@ const withValidateForm = (View) => {
     validateForm = (name, value) => {
       const isEmpty = this.isNotEmptyValue(name, value);
       switch (true) {
-        case name === 'email' && isEmpty:
-          return this.checkError
-            (validateEmail)
-            (name, value, 'должен содержать @')
         case name === 'index' && isEmpty:
           return this.checkError
             (validateIndex)
@@ -131,6 +141,17 @@ const withValidateForm = (View) => {
           return this.checkError
             (validateСardPeriod)
             (name, value, 'Должно содержать 4 цифры')
+        case name === 'country' && isEmpty:
+          if (value === 'default'){
+            this.setState(({ errors }) => ({
+              errors: {
+                ...errors,
+                country: 'выберете страну'
+              }
+            }));
+            return false;
+          }
+          return true;
         default:
           return isEmpty;
       }
@@ -171,6 +192,7 @@ const withValidateForm = (View) => {
           handleBlur={this.handleBlur}
           handleInput={this.handleInput}
           handleNextStep={this.handleNextStep}
+          handleSelect={this.handleSelect}
         />
       );
     }

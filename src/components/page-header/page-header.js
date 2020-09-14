@@ -9,7 +9,7 @@ const PageHeader = () => {
       <header className='page-header container'>
          <h1>Тестовое задание</h1>
          <Link to='/'>
-            <img src={logo}/>
+            <img src={logo} alt='grapheme-logo'/>
          </Link>
       </header>
    )

@@ -1,0 +1,31 @@
+.form-nav {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 1rem;
+   list-style: none;
+   border-radius: 0.25rem;
+}
+.form-nav__item {
+   display: flex;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 14px;
+   color: #979797;
+   &.is--active {
+      color: #101d94;
+   }
+   & + .form-nav__item {
+      padding-left: 0.5rem;
+      &:before {
+         display: inline-block;
+         margin: 0 0.5rem;
+         content: "";
+         width: 11px;
+         height: 11px;
+         border: 1px solid;
+         transform: rotate(45deg) translate(-50%, 50%);
+         border-color: #979797 #979797 transparent transparent;
+         box-sizing: border-box;
+      }
+   }
+}
