@@ -43,7 +43,7 @@ module.exports = (env = {}) => {
           loader: 'babel-loader'
         },
         {
-          test: /\.(jpg|svg|png|jpeg|ico)$/,
+          test: /\.(jpg|svg|png|jpeg)$/,
           use: [{
             loader: 'file-loader',
             options: {
@@ -53,6 +53,18 @@ module.exports = (env = {}) => {
           }]
         },
         {
+          test: /\.(eot|ttf|woff|woff2|ico)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+                outputPath: 'fonts'
+              }
+            }
+          ]
+        },
+        {
           test: /\.css/,
           use: getStyleLoaders()
         },
@@ -60,7 +72,6 @@ module.exports = (env = {}) => {
           test: /\.s[ca]ss/,
           use: [...getStyleLoaders(), 'sass-loader']
         }
-
       ]
     },
     plugins: getPlugins(),

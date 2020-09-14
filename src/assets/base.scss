@@ -1,11 +1,10 @@
-$bgPageColor: #e5e5e5;
-$colorPrimary: #39dcbd;
+@import './variable.scss';
 
 body {
   background-color: $bgPageColor;
-  font-family: Helvetica, sans-serif;
+  font-family: HelveticaNeue, sans-serif;
   font-weight: 300;
-  color: #000000;
+  color: $colorDark;
   font-size: 16px;
   line-height: 18px;
 }

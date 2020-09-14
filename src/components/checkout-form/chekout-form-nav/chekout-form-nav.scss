@@ -1,3 +1,5 @@
+@import '../../../assets/variable.scss';
+
 .form-nav {
    display: flex;
    flex-wrap: wrap;
@@ -10,9 +12,9 @@
    font-weight: normal;
    font-size: 12px;
    line-height: 14px;
-   color: #979797;
+   color: $colorDisable;
    &.is--active {
-      color: #101d94;
+      color: $colorActive;
    }
    & + .form-nav__item {
       padding-left: 0.5rem;
@@ -24,7 +26,7 @@
          height: 11px;
          border: 1px solid;
          transform: rotate(45deg) translate(-50%, 50%);
-         border-color: #979797 #979797 transparent transparent;
+         border-color:  $colorDisable $colorDisable transparent transparent;
          box-sizing: border-box;
       }
    }

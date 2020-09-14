@@ -1,32 +1,32 @@
-export function validateIndex(email) {
+export function validateIndex(str) {
 	const re = /^\d{6}$/;
-	return re.test(String(email));
+	return re.test(String(str));
 }
-export function validateUserName(email) {
+export function validateUserName(str) {
 	const re = /^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$/u;
-	return re.test(String(email));
+	return re.test(String(str));
 }
-export function validateTown(email) {
+export function validateTown(str) {
 	const re = /^[a-zA-Zа-яА-Я-']+(?:[- ][a-zA-Zа-яА-Я']+)*$/i;
-	return re.test(String(email));
+	return re.test(String(str));
 }
-export function validateAdress(email) {
+export function validateAdress(str) {
 	const re = /^[a-zA-Zа-яА-Я-'0-9,\.\s]+$/;
-	return re.test(String(email));
+	return re.test(String(str));
 }
-export function validateNameOnCard(email) {
+export function validateNameOnCard(str) {
 	const re = /^[a-zA-Z]+$/;
-	return re.test(String(email));
+	return re.test(String(str));
 }
-export function validateCardNumber(email) {
+export function validateCardNumber(str) {
 	const re = /^\d{16}$/;
-	return re.test(String(email));
+	return re.test(String(str));
 }
-export function validateCardCVV(email) {
+export function validateCardCVV(str) {
 	const re = /^\d{3}$/;
-	return re.test(String(email));
+	return re.test(String(str));
 }
-export function validateСardPeriod(email) {
+export function validateСardPeriod(str) {
 	const re = /^\d{4}$/;
-	return re.test(String(email));
+	return re.test(String(str));
 }

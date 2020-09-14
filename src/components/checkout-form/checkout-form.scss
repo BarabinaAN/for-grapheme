@@ -1,11 +1,13 @@
+@import '../../assets/variable.scss';
+
 .checkout {
-   background-color: #fff;
+   background-color: $bgColorWhite;
    padding: 20px 40px;
    box-sizing: border-box;
    border-radius: 20px;
    width: 401px;
    min-height: 520px;
-   box-shadow: 0px 0px 10px #ebf0ff;
+   box-shadow: 0px 0px 10px $shadowColor;
    border-radius: 1.5rem;
    &.is--verified {
       display: flex;
@@ -16,17 +18,16 @@
 }
 
 legend {
-   font-weight: 300;
    font-size: 26px;
    line-height: 31px;
-   color: #101d94;
+   color: $colorActive;
    margin-bottom: 1.25rem;
 }
 
 .btn {
    display: inline-block;
    font-weight: 500;
-   color: #212529;
+   color: $colorDark;
    text-align: center;
    vertical-align: middle;
    user-select: none;
@@ -41,8 +42,8 @@ legend {
    text-decoration: none;
    box-sizing: border-box;
    &.btn-primary {
-      color: #fff;
-      background-color: rgba(25, 165, 39, 0.8);
-      border-color: rgba(25, 165, 39, 0.8);
+      color: $colorWhite;
+      background-color: $colorBtnPrimary;
+      border-color:  $colorBtnPrimary;
    }
 }

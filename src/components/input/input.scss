@@ -1,7 +1,9 @@
+@import '../../assets/variable.scss';
+
 label {
    display: block;
    margin-bottom: 0.375em;
-   color: #101d94;
+   color: $colorActive
 }
 
 input,
@@ -12,18 +14,18 @@ select {
    padding: 0.45rem 0.95rem;
    font-size: 1rem;
    line-height: 1.5;
-   color: #6b6b6b;
+   color: lighten($colorDisable, 27.5%);
    background-color: #fff;
    background-clip: padding-box;
-   border: 1px solid #dedcdc;
+   border: 1px solid lighten($colorDisable, 27.5%);
    border-radius: 5px;
    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
    box-sizing: border-box;
    &.is--invalid {
-      border-color: #ffadad;
+      border-color: $colorError;
    }
 }
 .error-message {
    font-size: 12px;
-   color: #ffadad;
+   color: $colorError;
 }

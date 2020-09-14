@@ -1,7 +1,8 @@
+@import '../../assets/variable.scss';
 .page-header {
    display: flex;
    align-items: center;
    justify-content: space-between;
    height: 100px;
-   background-color: #fff;
+   background-color: $bgColorWhite;
 }
